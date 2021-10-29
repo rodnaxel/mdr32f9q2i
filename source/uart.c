@@ -31,7 +31,7 @@ void uart_init()
 	//Установка предделителя часототы UART2 HCLKdiv = 16
 	UART_BRGInit(MDR_UART2, UART_HCLKdiv16 );
 
-	//Настройка параметров UART2: 115200, 8бит, 1 стоп бит, без паритета, откл. буфера FIFO, контроль потока RX/TX
+	//Настройка параметров UART2: 9600, 8бит, 1 стоп бит, без паритета, откл. буфера FIFO, контроль потока RX/TX
 	UART_InitStructure.UART_BaudRate = 9600;
 	UART_InitStructure.UART_WordLength = UART_WordLength8b;
 	UART_InitStructure.UART_StopBits = UART_StopBits1;
@@ -45,6 +45,23 @@ void uart_init()
 	//Команда включения UART2
 	UART_Cmd(MDR_UART2, ENABLE);
 }
+
+uint8_t putByte(uint8_t byte) {
+	
+//	if (UART_GetFlagStatus(MDR_UART2, UART_FLAG_RXFE) != SET) {
+//		UART_SendData(MDR_UART2, byte);
+//		return ERROR;
+//	}
+	UART_SendData(MDR_UART2, byte);
+	return SUCCESS;
+}
+
+
+uint8_t getByte() {
+	return UART_ReceiveData(MDR_UART2);
+}
+
+
 
 
 //Функция приема байта по UART2

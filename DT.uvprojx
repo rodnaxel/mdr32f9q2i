@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Config</IncludePath>
+              <IncludePath>.\config</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -381,36 +381,6 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>source</GroupName>
-          <Files>
-            <File>
-              <FileName>button.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\source\button.c</FilePath>
-            </File>
-            <File>
-              <FileName>clk.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\source\clk.c</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\source\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\source\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\source\uart.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>config</GroupName>
           <Files>
             <File>
@@ -427,6 +397,71 @@
               <FileName>MDR32F9Qx_lib.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\config\MDR32F9Qx_lib.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>header</GroupName>
+          <Files>
+            <File>
+              <FileName>button.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\button.h</FilePath>
+            </File>
+            <File>
+              <FileName>clk.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\clk.h</FilePath>
+            </File>
+            <File>
+              <FileName>led.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\led.h</FilePath>
+            </File>
+            <File>
+              <FileName>mdr_init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\mdr_init.h</FilePath>
+            </File>
+            <File>
+              <FileName>type_custom.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\type_custom.h</FilePath>
+            </File>
+            <File>
+              <FileName>uart.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\uart.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>source</GroupName>
+          <Files>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>mdr_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\mdr_init.c</FilePath>
             </File>
           </Files>
         </Group>

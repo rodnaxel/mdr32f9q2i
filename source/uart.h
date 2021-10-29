@@ -3,7 +3,11 @@
 
 #include "type_custom.h"
 
-void uart_Init(void);
+void uart_init(void);
 uint8_t uart_Work(void);
 uint8_t uart_Send(void);
+
+uint8_t putByte(uint8_t byte);
+uint8_t getByte(void);
+
 #endif

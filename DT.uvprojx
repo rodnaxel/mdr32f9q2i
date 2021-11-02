@@ -384,11 +384,6 @@
           <GroupName>config</GroupName>
           <Files>
             <File>
-              <FileName>MDR32F9Qx_board.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\config\MDR32F9Qx_board.h</FilePath>
-            </File>
-            <File>
               <FileName>MDR32F9Qx_config.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\config\MDR32F9Qx_config.h</FilePath>

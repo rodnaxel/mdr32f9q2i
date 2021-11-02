@@ -2,6 +2,7 @@
 #include "uart.h"
 #include "util.h"
 
+
 char b_sendByte;
 
 uint8_t b_led_switch;
@@ -27,14 +28,10 @@ void SysTick_Handler() {
 
 }
 
-void blink_led() {
-	static bool state = 0;
-	if (b_led_switch) {
-			state = !state;
-			led_Write(state);
-			b_led_switch = 0;
-		}
+void blink_led(void) {
+		MDR_PORTC->RXTX ^= 1 << PORT_Pin_2; 
 }
+
 
 void send_message() {
 	if (b_message_sent) {
@@ -52,7 +49,10 @@ int main(void) {
 	led_Write(1);
 	
   while (1){
-		blink_led();
+		if (b_led_switch) {
+			blink_led();
+			b_led_switch = 0;
+		}
 		send_message();
 	}
 }

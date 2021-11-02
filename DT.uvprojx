@@ -399,50 +399,30 @@
           <GroupName>header</GroupName>
           <Files>
             <File>
-              <FileName>button.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\source\button.h</FilePath>
-            </File>
-            <File>
-              <FileName>clk.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\source\clk.h</FilePath>
-            </File>
-            <File>
-              <FileName>led.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\source\led.h</FilePath>
-            </File>
-            <File>
               <FileName>mdr_init.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\source\mdr_init.h</FilePath>
-            </File>
-            <File>
-              <FileName>type_custom.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\source\type_custom.h</FilePath>
             </File>
             <File>
               <FileName>uart.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\source\uart.h</FilePath>
             </File>
+            <File>
+              <FileName>global.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\global.h</FilePath>
+            </File>
+            <File>
+              <FileName>util.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\source\util.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
           <GroupName>source</GroupName>
           <Files>
-            <File>
-              <FileName>button.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\source\button.c</FilePath>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\source\led.c</FilePath>
-            </File>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
@@ -457,6 +437,11 @@
               <FileName>mdr_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\source\mdr_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>util.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\source\util.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -483,6 +468,12 @@
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="2.0.3" condition="CON_MDR1986VE92">
+        <package name="MDR1986BExx" schemaVersion="1.2" url="https://ic.milandr.ru/soft/" vendor="Keil" version="2.0.3"/>
+        <targetInfos>
+          <targetInfo name="MDR32F9Q2I"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Drivers" Cgroup="EEPROM" Cvendor="Keil" Cversion="2.0.3" condition="CON_MDR32F9">
         <package name="MDR1986BExx" schemaVersion="1.2" url="https://ic.milandr.ru/soft/" vendor="Keil" version="2.0.3"/>
         <targetInfos>
           <targetInfo name="MDR32F9Q2I"/>

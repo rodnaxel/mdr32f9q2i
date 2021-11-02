@@ -1,7 +1,7 @@
 #ifndef __UART_H__
 #define __UART_H__
 
-#include "type_custom.h"
+#include "global.h"
 
 void uart_init(void);
 uint8_t uart_Work(void);

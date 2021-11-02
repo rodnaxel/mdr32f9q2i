@@ -1,8 +1,6 @@
-#include "clk.h"
-#include "led.h"
-#include "uart.h"
-#include "button.h"
 #include "mdr_init.h"
+#include "uart.h"
+#include "util.h"
 
 char b_sendByte;
 
@@ -47,12 +45,10 @@ void send_message() {
 
 int main(void) {
 
-	mdr_init();
+	device_init();
 	
 	//Инициализация периферии
 	uart_init();
-	led_Init();
-	button_Init();	
 	led_Write(1);
 	
   while (1){

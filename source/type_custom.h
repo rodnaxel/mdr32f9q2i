@@ -6,7 +6,6 @@
 #include "MDR32F9Qx_uart.h"
 #include "MDR32F9Qx_port.h"
 
-typedef unsigned char bool;
-
+#include "stdbool.h"
 
 #endif
